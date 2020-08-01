@@ -22,5 +22,14 @@ namespace MVC1.Controllers
 
             return View(details);
         }
+        [HttpGet]
+        public ActionResult Cdetails()
+        {
+            CDetails cDetails = new CDetails()
+            {
+
+            };
+            return View(cDetails);
+        }
     }
 }
