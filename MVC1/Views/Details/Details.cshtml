@@ -1,0 +1,53 @@
+﻿@model MVC1.Models.Detail
+
+@{
+    ViewBag.Title = "Details";
+    //Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div> 
+        <table style="font-family:Arial">
+            <tr>
+                <td>
+                    <b>01 : </b>
+                </td>
+                <td>
+                    <b>@Model.features2</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>02 : </b>
+                </td>
+                <td>
+                    <b>@Model.features1</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>03 : </b>
+                </td>
+                <td>
+                    <b>@Model.features3</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>04 : </b>
+                </td>
+                <td>
+                    <b>@Model.features4</b>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
