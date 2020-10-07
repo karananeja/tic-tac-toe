@@ -32,6 +32,7 @@ body  {
     margin-top: 25px;
     font-size: 25px;
     justify-content: space-around;
+    height: 30px;
 }
 
 .status span {
@@ -84,9 +85,9 @@ body  {
     color: #BD022F;
 }
 
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
     .game-grid {
-        margin-top:  25px;
+        margin-top: 25px;
         grid-gap: 10px;
     }
 
@@ -104,7 +105,7 @@ body  {
     }
 }
 
-@media (max-width: 540px) {
+@media only screen and (max-width: 540px) {
     .container {
         margin: 25px;
         padding: 25px;
@@ -121,5 +122,25 @@ body  {
 
     .o::after {
         font-size: 125px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        margin: 25px;
+        padding: 25px;
+    }
+
+    .game-cell {
+        height: 100px;
+        width: 100px;
+    }
+
+    .x::after {
+        font-size: 75px;
+    }
+
+    .o::after {
+        font-size: 100px;
     }
 }
